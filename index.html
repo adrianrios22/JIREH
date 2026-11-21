@@ -7,15 +7,15 @@
   <!-- =========================
        CAMBIAR PARA CADA CLIENTE
        ========================= -->
-  <title>Urban Burger | Restaurante</title>
+  <title>Jireh · Dios proveerá | Menú digital</title>
   <meta
     name="description"
-    content="Hamburguesas artesanales, bebidas, entradas y mucho sabor."
+    content="Consulta el menú de Jireh y haz tu pedido por WhatsApp."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;800;900&family=Barlow+Condensed:ital,wght@0,800;0,900;1,900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;800;900&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
   <style>
 
     /* ========================================
@@ -29,8 +29,8 @@
       --fondo-3: #171717;
       --tarjeta: #191919;
 
-      --principal: #f2b51d;
-      --principal-claro: #ffd45c;
+      --principal: #b76d83;
+      --principal-claro: #e5ce84;
 
       --texto: #ffffff;
       --texto-gris: #b7b7b7;
@@ -235,80 +235,6 @@
        HERO
        ======================================== */
 
-    .hero {
-      padding: 0;
-      min-height: 720px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(0,0,0,.96) 0%,
-          rgba(0,0,0,.87) 38%,
-          rgba(0,0,0,.44) 67%,
-          rgba(0,0,0,.20) 100%
-        ),
-        url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=85&w=1800&auto=format&fit=crop");
-
-      background-size: cover;
-      background-position: center;
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 500px;
-      height: 500px;
-      border-radius: 50%;
-      background: rgba(242,181,29,.10);
-      filter: blur(100px);
-      right: -100px;
-      top: 60px;
-    }
-
-    .hero-contenido {
-      position: relative;
-      z-index: 2;
-      max-width: 660px;
-      padding: 100px 0;
-    }
-
-    .hero-etiqueta {
-      display: inline-flex;
-      align-items: center;
-      padding: 7px 14px;
-      margin-bottom: 22px;
-      border-radius: 999px;
-      border: 1px solid rgba(242,181,29,.35);
-      background: rgba(242,181,29,.08);
-      color: var(--principal);
-      font-size: 12px;
-      letter-spacing: 1.5px;
-      font-weight: 900;
-    }
-
-    .hero h1 {
-      font-size: clamp(54px, 8vw, 95px);
-      line-height: .91;
-      text-transform: uppercase;
-      letter-spacing: -4px;
-      margin-bottom: 24px;
-    }
-
-    .hero h1 span {
-      color: var(--principal);
-    }
-
-    .hero p {
-      max-width: 570px;
-      color: #d1d1d1;
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
-
     .hero-botones {
       display: flex;
       flex-wrap: wrap;
@@ -496,7 +422,7 @@
 
     .promo-box {
       background:
-        linear-gradient(120deg, #d89900, var(--principal), #ffd258);
+        linear-gradient(120deg, #7c25b1, var(--principal), #dc9cff);
       color: #111;
       border-radius: 25px;
       padding: 45px;
@@ -749,37 +675,6 @@
         padding: 70px 0;
       }
 
-      .hero {
-        min-height: 660px;
-        background-position: 60% center;
-      }
-
-      .hero::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background:
-          linear-gradient(
-            0deg,
-            rgba(0,0,0,.75),
-            transparent 45%
-          );
-      }
-
-      .hero-contenido {
-        padding: 80px 0;
-        z-index: 3;
-      }
-
-      .hero h1 {
-        font-size: 54px;
-        letter-spacing: -2px;
-      }
-
-      .hero p {
-        font-size: 16px;
-      }
-
       .beneficios-grid {
         grid-template-columns: 1fr;
       }
@@ -831,18 +726,17 @@
     /* =======================================================
        MENÚ ESENCIAL - CAMBIAR COLORES EN :root AL INICIO
        ======================================================= */
-    .menu-esencial {background: radial-gradient(ellipse at 15% 0%,rgba(242,181,29,.07),transparent 55%),var(--fondo-2);}
+    .menu-esencial {background: radial-gradient(ellipse at 15% 0%,rgba(183,109,131,.07),transparent 55%),var(--fondo-2);}
     .menu-cabecera {margin-bottom:32px}
     .categorias-pestanas {display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;scroll-margin-top:100px}
     .pestana-menu {cursor:pointer;display:flex;align-items:center;gap:9px;padding:13px 19px;border:1.5px solid #484848;border-radius:999px;background:#191919;color:#eee;font-weight:800;transition:border-color .25s,transform .25s,box-shadow .25s,background .25s}
     .pestana-menu:hover {border-color:var(--principal);transform:translateY(-2px)}
-    .pestana-menu.activa {border-color:var(--principal);color:var(--principal);background:#24200e;box-shadow:0 0 0 1px var(--principal),0 0 20px rgba(242,181,29,.26)}
     .menu-distribucion {display:grid;grid-template-columns:minmax(0,1fr) 345px;gap:26px;align-items:start}
     .lista-productos {background:linear-gradient(150deg,#1c1c1c,#121212);border:1px solid #3a3a3a;border-radius:22px;padding:13px;min-width:0;perspective:1100px}
     .plato-item {position:relative;padding:18px 18px;border-radius:15px;border:2px solid transparent;background:transparent;margin:3px 0;transition:transform .34s cubic-bezier(.2,.9,.2,1.1),box-shadow .34s,border-color .34s,background .34s;z-index:1}
     .plato-item:not(:last-child):after {content:"";position:absolute;left:18px;right:18px;bottom:-4px;height:1px;background:#383838}
-    .plato-item:hover {border-color:#78621e;background:#25231c}
-    .plato-item.seleccionado {z-index:5;transform:translate3d(0,-6px,26px) scale(1.025);border-color:var(--principal);background:linear-gradient(110deg,#302713,#181818 65%);box-shadow:0 17px 0 -10px #9d720d,0 24px 38px #000b,0 0 25px rgba(242,181,29,.23)}
+    .plato-item:hover {border-color:#7c4a57;background:#1e191b}
+    .plato-item.seleccionado {z-index:5;transform:translate3d(0,-6px,26px) scale(1.025);border-color:var(--principal);background:linear-gradient(110deg,#38212a,#181818 65%);box-shadow:0 17px 0 -10px #68394b,0 24px 38px #000b,0 0 25px rgba(183,109,131,.23)}
     .plato-linea {display:flex;align-items:center;gap:14px;justify-content:space-between}
     .plato-texto {min-width:0;flex:1}
     .plato-texto h3 {font-size:19px;font-weight:900;margin-bottom:4px}
@@ -850,13 +744,11 @@
     .plato-acciones {flex-shrink:0;display:flex;align-items:center;gap:13px}
     .plato-precio {color:var(--principal);font-weight:900;font-size:19px;white-space:nowrap}
     .elegir-plato,.sumar-plato {border:1px solid #777;border-radius:12px;padding:9px 13px;background:#111;color:white;font-weight:800;cursor:pointer;white-space:nowrap;transition:.2s}
-    .elegir-plato:hover,.plato-item.seleccionado .elegir-plato {background:var(--principal);border-color:var(--principal);color:#111}
-    .detalle-plato {display:none;margin-top:15px;padding-top:14px;border-top:1px solid #5b4a21;animation:aparecer .25s ease}
+    .detalle-plato {display:none;margin-top:15px;padding-top:14px;border-top:1px solid #63404a;animation:aparecer .25s ease}
     .plato-item.seleccionado .detalle-plato {display:block}
     .detalle-plato label {display:block;font-size:13px;font-weight:700;color:#ddd;margin-bottom:7px}
     .detalle-plato textarea {width:100%;min-height:55px;resize:vertical;padding:11px;background:#101010;border:1px solid #555;border-radius:9px;color:#fff;font:inherit}
     .detalle-acciones {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:12px}
-    .sumar-plato {border-color:var(--principal);background:var(--principal);color:#111}
     .sumar-plato:active {transform:scale(.96)}
     @keyframes aparecer {from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
     /* Sticky: permanece visible en la columna al desplazarse por el menú */
@@ -915,172 +807,195 @@
     }
     @media(prefers-reduced-motion:reduce) {.plato-item,.pestana-menu{transition:none}.plato-item.seleccionado{transform:none}}
 
-  
-    .hero-burger-movil, .hero-texto-movil, .hero-icono-corona,
-    .icono-cta { display: none; }
-    @media (max-width: 720px) {
-      .beneficios { display: none; }
-      .menu-esencial { padding-top: 65px; }
+    /* Marca y portada de Jireh */
+    body { font-family: "Barlow", Arial, sans-serif; }
+    :root { --serif-jireh: "Cinzel", Georgia, serif; }
+
+    .logo { gap: 10px; }
+    .logo-icono {
+      flex: 0 0 42px;
+      grid-template-rows: 8px 2px 6px;
+      align-content: center;
+      gap: 2px;
+      background: transparent;
+      border: 1.5px solid var(--principal);
+      color: var(--principal-claro);
+    }
+    .logo-icono i { display: block; width: 20px; border: 1.5px solid currentColor; }
+    .logo-icono i:first-child { height: 8px; border-radius: 12px 12px 3px 3px; }
+    .logo-icono i:nth-child(2) { height: 2px; border-width: 0 0 1.5px; }
+    .logo-icono i:last-child { height: 6px; border-radius: 3px 3px 9px 9px; }
+    .logo .logo-nombre {
+      border-left: 1px solid #75545b;
+      padding-left: 10px;
+      font: 500 22px/1 var(--serif-jireh);
+      letter-spacing: .12em;
+      color: #f6efe7;
+    }
+    .logo .logo-nombre small {
+      display: block;
+      margin-top: 4px;
+      font: 400 12px/1 Georgia, serif;
+      letter-spacing: .1em;
     }
 
+    .hero {
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      align-items: center;
+      min-height: clamp(570px, 52vw, 740px);
+      padding: 0;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 72% 44%, #261a1e, #0b0a0b 70%);
+      border-bottom: 1px solid #764352;
+    }
+    .hero-contenido { position: relative; z-index: 1; width: fit-content; padding: 72px 0; }
+    .hero h1, .hero-subtitulo { color: var(--principal); font-family: var(--serif-jireh); }
+    .hero h1 { font-size: clamp(48px, 6.2vw, 92px); font-weight: 400; line-height: .97; }
+    .hero h1 span { display: block; font-size: .76em; margin-top: .14em; }
+    .hero-subtitulo {
+      margin: 12px 0 26px;
+      font-size: clamp(11px, 1.35vw, 18px);
+      letter-spacing: .20em;
+    }
+    .hero-foto {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+      right: 0;
+      bottom: 0;
+      width: min(65%, 1040px);
+      aspect-ratio: 864 / 800;
+      overflow: hidden;
+      mask-image: linear-gradient(90deg, transparent, #000 29%);
+    }
+    .encuadre-jireh img { display: block; width: 100%; height: auto; transform: translateY(-31.25%); }
+    .menu-cabecera .titulo-seccion { font-family: var(--serif-jireh); font-weight: 400; }
+    .hero-botones { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .hero-botones a { min-width: 150px; min-height: 42px; padding: 0 14px; font-size: 15px; }
+    .icono-cta { width: 19px; height: 19px; margin-right: 7px; flex-shrink: 0; }
+    .nosotros-img .encuadre-jireh {
+      aspect-ratio: 864 / 800;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+    .nosotros-img .encuadre-jireh img { height: auto; border-radius: 0; }
+    .whatsapp-flotante { display: none; }
 
-    /* ========================================================
-       INICIO MÓVIL — VERSIÓN 2 CON CARGA VERIFICADA
-       La ilustración conserva la tipografía, los íconos y la foto.
-       Los enlaces HTML se alinean encima de los botones dibujados.
-       Imagen externa: ./imagenes/portada.jpg?v=3
-       Escritorio conserva sus estilos originales.
-       ======================================================== */
-    .carrito-icono-referencia { display: none; }
-
+    /* El brillo recorre el borde. El fondo cambia al seleccionar. */
+    @property --recorrido-borde {
+      syntax: '<angle>';
+      initial-value: 0deg;
+      inherits: false;
+    }
+    @keyframes recorrer-borde { to { --recorrido-borde: 360deg; } }
+    :is(.boton, .boton-borde, .elegir-plato, .sumar-plato, .pestana-menu.activa,
+        .carrito-lateral, .ver-carrito-movil, .controles-cantidad button, .enviar-pedido) {
+      --fondo-control: #151315;
+      border: 1.5px solid transparent;
+      background:
+        linear-gradient(var(--fondo-control), var(--fondo-control)) padding-box,
+        conic-gradient(from var(--recorrido-borde, 0deg),
+          #a55c73, #b76d83 22%, #e5ce84 42%, #f3dfa1 48%,
+          #e5ce84 53%, #8c4e65 78%, #a55c73) border-box;
+      color: #f8eee9;
+      animation: recorrer-borde 4.5s linear infinite;
+    }
+    .hero .boton-borde { border-color: #777174; background: #151315; animation: none; }
+    :is(.boton, .boton-borde):hover { transform: translateY(-2px); }
+    .pestana-menu.activa[data-elegida="true"],
+    .plato-item.seleccionado .elegir-plato { --fondo-control: #4e2635; }
+    .boton:active, .hero .boton-borde:active, .sumar-plato:active,
+    .enviar-pedido:active, .barra-carrito-movil:active .ver-carrito-movil {
+      --fondo-control: #4e2635;
+      background-color: #4e2635;
+    }
+    .plato-precio, .carrito-subtotal strong, .item-carrito .subtotal-linea { color: var(--principal-claro); }
+    .detalle-plato select {
+      display: block;
+      width: 100%;
+      margin: 6px 0 12px;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 10px;
+      background: #191919;
+      color: #eee;
+      font: inherit;
+      color-scheme: dark;
+    }
+    :is(a, button, input, select, textarea):focus-visible {
+      outline: 2px solid var(--principal-claro);
+      outline-offset: 3px;
+    }
     @media (max-width: 720px) {
-      body { padding-bottom: max(72px, 18.75vw); }
-
-      /* Primeros 146 píxeles de la referencia: encabezado. */
-      html.portada-cargada header {
-        position: relative;
-        height: 16.898148vw;
-        border: 0;
-        backdrop-filter: none;
-        background: #050505 url("./imagenes/portada.jpg?v=3")
-                    left top / 100vw auto no-repeat;
+      body { padding-bottom: calc(64px + env(safe-area-inset-bottom)); }
+      html { scroll-padding-top: 64px; }
+      .nav { min-height: 60px; gap: 12px; }
+      .logo-icono { width: 36px; height: 36px; flex-basis: 36px; }
+      .logo .logo-nombre { font-size: 19px; }
+      .hero { display: block; min-height: clamp(475px, 118vw, 720px); }
+      .hero > .contenedor { width: 90%; }
+      .hero-contenido { padding: clamp(25px, 5.7vw, 42px) 0 0; }
+      .hero h1 { font-size: clamp(39px, 10vw, 71px); }
+      .hero-subtitulo { margin: 11px 0 19px; }
+      .hero-foto {
+        width: 101%;
+        right: -12%;
+        mask-image: linear-gradient(180deg, transparent, #000 24%);
       }
-      html.portada-cargada header .nav { width: 100%; height: 100%; min-height: 0; padding: 0; }
-      html.portada-cargada header .logo {
-        position: absolute;
-        left: 4.7%; top: 18%; width: 51%; height: 64%;
-        opacity: 0;
-      }
-      html.portada-cargada header .menu-movil {
-        display: block;
-        position: absolute;
-        right: 3%; top: 12%; width: 12%; height: 75%;
-        padding: 0;
-        font-size: 0;
-        color: transparent;
-      }
-      html.portada-cargada header .nav-links { top: 100%; z-index: 1001; }
-      html.portada-cargada header .menu-movil:focus-visible,
-      html.portada-cargada header .logo:focus-visible {
-        outline: 3px solid #ffce00;
-        outline-offset: -3px;
-        opacity: 1;
-      }
-
-      /* Recorte por CSS: muestra la portada, excluye el carrito de ejemplo. */
-      html.portada-cargada .hero {
-        display: block;
-        height: 142.129630vw;
-        min-height: 0;
-        padding: 0;
-        background: #070707 url("./imagenes/portada.jpg?v=3")
-                    left -16.898148vw / 100vw auto no-repeat;
-      }
-      html.portada-cargada .hero::before, html.portada-cargada .hero::after { display: none; }
-      html.portada-cargada .hero > .contenedor,
-      html.portada-cargada .hero-contenido {
-        position: static;
-        width: 100%; max-width: none;
-        height: 100%; margin: 0; padding: 0;
-      }
-
-      /* Texto accesible: el aspecto visible está en el arte original. */
-      html.portada-cargada .hero-etiqueta, html.portada-cargada .hero h1, html.portada-cargada .hero p {
-        position: absolute;
-        width: 1px; height: 1px;
-        overflow: hidden;
-        clip-path: inset(50%);
-        white-space: nowrap;
-        padding: 0; margin: 0; border: 0;
-      }
-      html.portada-cargada .hero-botones { display: contents; }
-      html.portada-cargada .hero-botones a {
-        position: absolute;
-        z-index: 3;
-        display: block;
-        padding: 0; margin: 0; border: 0;
-        background: transparent;
-        box-shadow: none;
-        font-size: 0; color: transparent;
-        transform: none;
-        border-radius: 4.5vw;
-      }
-      html.portada-cargada .hero-botones .boton {
-        left: 6.134259%; top: 48.697068%;
-        width: 41.666667%; height: 6.921824%;
-      }
-      html.portada-cargada .hero-botones .boton-borde {
-        left: 6.134259%; top: 57.491857%;
-        width: 39.699074%; height: 6.677524%;
-      }
-      html.portada-cargada .hero-botones a:focus-visible {
-        outline: 3px solid white;
-        outline-offset: 3px;
-      }
-      html.portada-cargada .hero-botones a:active { background: rgb(255 255 255 / 12%); }
-      html.portada-cargada .hero-botones a:hover { transform: none; background: transparent; }
-      .beneficios { margin-top: 0; }
-      html.portada-cargada body.inicio-visible .whatsapp-flotante { visibility: hidden; }
-
-      /* Carrito real: nunca se utilizan los $42.000 impresos en la foto. */
+      .hero-botones a { min-width: 142px; min-height: 38px; font-size: 14px; }
+      .beneficios { display: none; }
+      .menu-esencial { padding-top: 50px; }
+      .menu-cabecera .titulo-seccion span { display: block; }
       .barra-carrito-movil {
         display: grid;
-        grid-template-columns: 1.33fr .9fr 1fr;
-        gap: 0;
-        min-height: 72px;
-        height: 18.75vw;
-        padding: 2.8vw 2.7vw 3vw 4.7vw;
-        border-top: 2px solid #efbd29;
-        background: linear-gradient(115deg, #101010, #0d0d0d);
-        box-shadow: none;
-        font-family: Arial, sans-serif;
-        font-size: 3.7vw;
-        font-weight: 700;
-        text-align: left;
+        grid-template-columns: 1.25fr .75fr 1.12fr;
+        gap: 8px;
+        min-height: 64px;
+        padding: 8px 4% calc(8px + env(safe-area-inset-bottom));
+        border-top: 1px solid #764352;
+        background: #111;
+        font-size: clamp(11px, 3.3vw, 17px);
       }
-      .resumen-carrito-movil {
-        display: flex; align-items: center; gap: 3.4vw;
-        min-width: 0; white-space: nowrap;
-      }
-      .carrito-icono-referencia {
-        position: relative;
-        display: inline-flex;
-        width: 6.4vw; flex: 0 0 6.4vw;
-      }
-      .carrito-icono-referencia svg { width: 100%; height: auto; }
+      .resumen-carrito-movil { display: flex; align-items: center; gap: 7px; white-space: nowrap; }
+      .carrito-icono-referencia { position: relative; display: inline-flex; width: 21px; flex: 0 0 21px; }
+      .carrito-icono-referencia svg { width: 100%; }
       .carrito-insignia {
         position: absolute;
-        top: -2.4vw; right: -1.9vw;
-        display: grid; place-items: center;
-        min-width: 4.4vw; height: 4.4vw;
-        padding: 0 .6vw;
-        border-radius: 50%;
-        color: #080808; background: #ffca05;
-        font-size: 2.9vw;
-      }
-      #totalMovil {
-        border-left: 1px solid #666;
+        top: -8px;
+        right: -3px;
+        min-width: 14px;
+        padding: 0 2px;
+        border-radius: 10px;
+        background: #945467;
+        color: #fff;
         text-align: center;
-        font-size: 4.4vw;
-        color: #ffc500;
+        font-size: 10px;
+      }
+      .barra-carrito-movil strong {
+        border-left: 1px solid #474145;
+        text-align: center;
+        color: var(--principal-claro);
         white-space: nowrap;
       }
       .ver-carrito-movil {
-        display: grid; place-items: center;
-        min-height: 9vw;
-        padding: 1vw;
-        border: 1px solid #e8b932;
-        border-radius: 3.5vw;
+        display: grid;
+        place-items: center;
+        min-height: 36px;
+        padding: 0 5px;
+        border-radius: 9px;
         white-space: nowrap;
       }
-      .whatsapp-flotante { bottom: calc(max(72px, 18.75vw) + 14px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation: none !important; }
     }
 
   </style>
 </head>
 
-
-<body class="inicio-visible">
+<body>
 
   <!-- ========================================
        HEADER
@@ -1092,15 +1007,10 @@
 
       <!-- CAMBIAR NOMBRE DEL CLIENTE -->
 
-      <a href="#inicio" class="logo">
+      <a href="#inicio" class="logo" aria-label="Jireh · Dios proveerá, inicio">
 
-        <div class="logo-icono">
-          🍔
-        </div>
-
-        <div>
-          URBAN <span>BURGER</span>
-        </div>
+        <div class="logo-icono" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="logo-nombre">Jireh<small>Dios proveerá</small></span>
 
       </a>
 
@@ -1115,9 +1025,8 @@
 
         <a href="#nosotros">Nosotros</a>
 
-        <a href="#ubicacion">Ubicación</a>
+        <a href="#ubicacion">Contacto</a>
 
-        <a href="#redes">Redes</a>
 
       </nav>
 
@@ -1144,6 +1053,10 @@
          ======================================== -->
 
     <section class="hero" id="inicio">
+      <div class="hero-foto encuadre-jireh">
+        <img src="./imagenes/hamburguesa-jireh.jpg" alt=""
+             width="864" height="1536" fetchpriority="high">
+      </div>
 
 
 
@@ -1151,27 +1064,8 @@
 
         <div class="hero-contenido">
 
-          <div class="hero-etiqueta">
-            <svg class="hero-icono-corona" viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7l5 4 5-7 5 7 5-4-2 12H4L2 7Z"/><path d="M4 22h16"/></svg>
-            SABOR ARTESANAL
-          </div>
-
-
-          <!-- CAMBIAR TEXTO PRINCIPAL -->
-
-          <h1>
-            Hechas para
-            <span>disfrutar</span>
-          </h1>
-
-
-          <p class="hero-texto-escritorio">
-            Hamburguesas artesanales, ingredientes frescos
-            y combinaciones creadas para convertir cualquier
-            antojo en una experiencia increíble.
-          </p>
-          <p class="hero-texto-movil">Hamburguesas artesanales,<br>ingredientes frescos y<br>combinaciones únicas.</p>
-
+          <h1>El sabor <span>del antojo</span></h1>
+          <p class="hero-subtitulo">Comidas rápidas</p>
 
           <div class="hero-botones">
 
@@ -1179,8 +1073,8 @@
               <svg class="icono-cta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 11V9a8 8 0 0 1 16 0v2"/><path d="M3 11h18v5H3z"/><path d="M5 16v3h14v-3"/><path d="M2 22h20"/></svg> Ver menú ↓
             </a>
 
-            <a href="#nosotros" class="boton-borde">
-              <svg class="icono-cta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Conócenos
+            <a href="#ubicacion" class="boton-borde">
+              <svg class="icono-cta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg> Contáctanos
             </a>
 
           </div>
@@ -1276,9 +1170,7 @@
     <section class="menu-esencial" id="menu">
       <div class="contenedor">
         <div class="cabecera-seccion menu-cabecera">
-          <p class="mini-titulo">Elige, personaliza y disfruta</p>
           <h2 class="titulo-seccion">Nuestro <span>menú digital</span></h2>
-          <p class="texto-seccion">Explora nuestras recetas, elige tus favoritos y mira tu pedido sumarse en tiempo real.</p>
         </div>
         <div class="categorias-pestanas" id="categorias" aria-label="Categorías de productos"></div>
         <div class="menu-distribucion">
@@ -1312,23 +1204,23 @@
           <div>
 
             <p>
-              PROMOCIÓN DESTACADA
+              DE NUESTRA CARTA
             </p>
 
             <h2>
-              Combo<br>
-              especial
+              Colita<br>
+              cubana
             </h2>
 
             <p>
-              Hamburguesa + papas + bebida
+              Con gaseosa · $11.000
             </p>
 
           </div>
 
 
           <div class="promo-icono">
-            🍔🔥
+            🌭
           </div>
 
         </div>
@@ -1349,10 +1241,9 @@
 
         <div class="nosotros-img">
 
-          <img
-            src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=85&w=1000&auto=format&fit=crop"
-            alt="Restaurante"
-          >
+          <div class="encuadre-jireh">
+            <img src="./imagenes/hamburguesa-jireh.jpg" alt="Hamburguesa con queso, tocineta y vegetales" loading="lazy" width="864" height="1536">
+          </div>
 
         </div>
 
@@ -1360,7 +1251,7 @@
         <div class="nosotros-texto">
 
           <p class="mini-titulo">
-            Nuestra historia
+            Sobre Jireh
           </p>
 
           <h2 class="titulo-seccion">
@@ -1369,24 +1260,16 @@
           </h2>
 
           <p>
-            Urban Burger nació con una idea sencilla:
-            preparar comida deliciosa con ingredientes frescos,
-            buenas porciones y una experiencia que haga
-            querer volver.
+            En Jireh encuentras comidas rápidas y antojos venezolanos. La carta incluye arepas, empanadas, hamburguesas, picadas y shawarmas.
           </p>
 
-          <p>
-            Esta sección está preparada para que cada cliente
-            pueda contar la historia de su restaurante,
-            negocio o emprendimiento.
-          </p>
 
 
           <a
             href="#ubicacion"
             class="boton"
           >
-            Visítanos
+            Contáctanos
           </a>
 
         </div>
@@ -1409,11 +1292,11 @@
         <div class="cabecera-seccion">
 
           <p class="mini-titulo">
-            Encuéntranos
+            Contacto
           </p>
 
           <h2 class="titulo-seccion">
-            Estamos cerca de <span>ti</span>
+            Haz tu pedido por <span>WhatsApp</span>
           </h2>
 
         </div>
@@ -1435,7 +1318,7 @@
             <!-- CAMBIAR PARA CADA CLIENTE -->
 
             <p>
-              Funza, Cundinamarca
+              <a href="https://wa.me/573137126242" target="_blank" rel="noopener">Consulta la dirección por WhatsApp</a>
             </p>
 
           </div>
@@ -1454,8 +1337,7 @@
             <!-- CAMBIAR PARA CADA CLIENTE -->
 
             <p>
-              Lunes a domingo<br>
-              12:00 p. m. - 10:00 p. m.
+              <a href="https://wa.me/573137126242" target="_blank" rel="noopener">Consulta el horario por WhatsApp</a>
             </p>
 
           </div>
@@ -1474,8 +1356,7 @@
             <!-- CAMBIAR PARA CADA CLIENTE -->
 
             <p>
-              +57 300 123 4567<br>
-              restaurante@email.com
+              <a href="https://wa.me/573137126242" target="_blank" rel="noopener">+57 313 712 6242</a>
             </p>
 
           </div>
@@ -1488,73 +1369,7 @@
     </section>
 
 
-    <!-- ========================================
-         REDES SOCIALES
-         ======================================== -->
-
-    <section id="redes">
-
-      <div class="contenedor">
-
-
-        <div class="cabecera-seccion">
-
-          <p class="mini-titulo">
-            Síguenos
-          </p>
-
-          <h2 class="titulo-seccion">
-            Encuéntranos en <span>redes</span>
-          </h2>
-
-          <p class="texto-seccion">
-            Conoce nuestras novedades,
-            promociones y productos.
-          </p>
-
-        </div>
-
-
-        <div class="redes-grid">
-
-
-          <!-- CAMBIAR LINKS PARA CADA CLIENTE -->
-
-          <a
-            class="red-social"
-            href="https://instagram.com"
-            target="_blank"
-          >
-            📸 Instagram
-          </a>
-
-
-          <a
-            class="red-social"
-            href="https://facebook.com"
-            target="_blank"
-          >
-            👍 Facebook
-          </a>
-
-
-          <a
-            class="red-social"
-            href="https://tiktok.com"
-            target="_blank"
-          >
-            🎵 TikTok
-          </a>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-  </main>
+</main>
 
 
   <!-- ========================================
@@ -1571,15 +1386,10 @@
 
         <div class="footer-col">
 
-          <a href="#inicio" class="logo">
+          <a href="#inicio" class="logo" aria-label="Jireh · Dios proveerá, inicio">
 
-            <div class="logo-icono">
-              🍔
-            </div>
-
-            <div>
-              URBAN <span>BURGER</span>
-            </div>
+            <div class="logo-icono" aria-hidden="true"><i></i><i></i><i></i></div>
+        <span class="logo-nombre">Jireh<small>Dios proveerá</small></span>
 
           </a>
 
@@ -1610,7 +1420,7 @@
           </a>
 
           <a href="#ubicacion">
-            Ubicación
+            Contacto
           </a>
 
         </div>
@@ -1622,21 +1432,13 @@
             Menú
           </h3>
 
-          <a href="#menu">
-            Hamburguesas
-          </a>
+          <a href="#menu" data-categoria-menu="Hamburguesas">Hamburguesas</a>
 
-          <a href="#menu">
-            Bebidas
-          </a>
+          <a href="#menu" data-categoria-menu="Perros calientes y colitas">Perros calientes y colitas</a>
 
-          <a href="#menu">
-            Entradas
-          </a>
+          <a href="#menu" data-categoria-menu="Antojos venezolanos">Antojos venezolanos</a>
 
-          <a href="#menu">
-            Postres
-          </a>
+          <a href="#menu" data-categoria-menu="Picadas">Picadas</a>
 
         </div>
 
@@ -1650,15 +1452,7 @@
           <!-- CAMBIAR -->
 
           <p>
-            📞 +57 300 123 4567
-          </p>
-
-          <p>
-            📍 Funza, Cundinamarca
-          </p>
-
-          <p>
-            ✉ restaurante@email.com
+            <a href="https://wa.me/573137126242" target="_blank" rel="noopener">📱 +57 313 712 6242</a>
           </p>
 
         </div>
@@ -1669,7 +1463,7 @@
 
       <div class="copyright">
 
-        © 2026 Urban Burger · Todos los derechos reservados
+        © 2026 Jireh Comidas Rápidas · Todos los derechos reservados
 
       </div>
 
@@ -1686,7 +1480,7 @@
 
   <a
     class="whatsapp-flotante"
-    href="https://wa.me/573144073259"
+    href="https://wa.me/573137126242"
     target="_blank"
     aria-label="WhatsApp"
   >
@@ -1772,123 +1566,69 @@
   <script>
   /* ========================================================
      CONFIGURACIÓN - CAMBIAR POR CADA RESTAURANTE
-     Número conservado del sistema original del archivo recibido.
+     Número de pedidos publicado en la carta de Jireh.
      ======================================================== */
   (() => {
-    const WHATSAPP = "573144073259";
-    const RESTAURANTE = "URBAN BURGER";
+    const WHATSAPP = "573137126242";
+    const RESTAURANTE = "JIREH COMIDAS RÁPIDAS";
 
     /* ========================================================
        PRODUCTOS - NOMBRE, RECETA, PRECIO Y CATEGORÍA
-       12 productos conservados del HTML original.
+       Carta de Jireh Comidas Rápidas.
        Para añadir platos, copiar un objeto y cambiar sus datos.
        ======================================================== */
     const PRODUCTOS = [
-    {
-        "id": "1",
-        "categoria": "Hamburguesas",
-        "nombre": "Burger Clásica",
-        "descripcion": "Carne artesanal, queso cheddar,\n                vegetales frescos y salsa especial.",
-        "precio": 18000
-    },
-    {
-        "id": "2",
-        "categoria": "Hamburguesas",
-        "nombre": "Burger Doble",
-        "descripcion": "Doble carne, doble queso,\n                tocineta y salsa de la casa.",
-        "precio": 24000
-    },
-    {
-        "id": "3",
-        "categoria": "Hamburguesas",
-        "nombre": "Burger Especial",
-        "descripcion": "Carne artesanal, queso,\n                cebolla caramelizada y salsa premium.",
-        "precio": 22000
-    },
-    {
-        "id": "4",
-        "categoria": "Bebidas",
-        "nombre": "Limonada Natural",
-        "descripcion": "Preparada al momento\n                con limón fresco y hielo.",
-        "precio": 7000
-    },
-    {
-        "id": "5",
-        "categoria": "Bebidas",
-        "nombre": "Gaseosa",
-        "descripcion": "Diferentes sabores\n                para acompañar tu comida.",
-        "precio": 5000
-    },
-    {
-        "id": "6",
-        "categoria": "Bebidas",
-        "nombre": "Bebida Especial",
-        "descripcion": "Refrescante mezcla\n                preparada especialmente para la casa.",
-        "precio": 9000
-    },
-    {
-        "id": "7",
-        "categoria": "Entradas",
-        "nombre": "Papas Clásicas",
-        "descripcion": "Papas crocantes\n                recién preparadas.",
-        "precio": 8000
-    },
-    {
-        "id": "8",
-        "categoria": "Entradas",
-        "nombre": "Papas Especiales",
-        "descripcion": "Papas con queso,\n                salsa especial y toppings.",
-        "precio": 13000
-    },
-    {
-        "id": "9",
-        "categoria": "Entradas",
-        "nombre": "Pollo Crunch",
-        "descripcion": "Pollo crocante\n                acompañado de salsa de la casa.",
-        "precio": 16000
-    },
-    {
-        "id": "10",
-        "categoria": "Postres",
-        "nombre": "Torta de Chocolate",
-        "descripcion": "Porción suave y chocolatosa,\n                perfecta para cerrar.",
-        "precio": 10000
-    },
-    {
-        "id": "11",
-        "categoria": "Postres",
-        "nombre": "Postre de la Casa",
-        "descripcion": "Una preparación especial\n                que cambia según disponibilidad.",
-        "precio": 12000
-    },
-    {
-        "id": "12",
-        "categoria": "Postres",
-        "nombre": "Dulce Especial",
-        "descripcion": "Preparación dulce\n                perfecta para acompañar una bebida.",
-        "precio": 9000
-    }
-];
-    const ICONOS = {Hamburguesas:"🍔", Bebidas:"🥤", Entradas:"🍟", Postres:"🍰"};
+      {"id": "burger-sencilla", "categoria": "Hamburguesas", "nombre": "Hamburguesa sencilla", "descripcion": "Pan, carne Angus, lechuga, tomate, salsas y ripio.", "precio": 15000},
+      {"id": "burger-especial", "categoria": "Hamburguesas", "nombre": "Hamburguesa especial", "descripcion": "Pan, carne Angus, lechuga, tomate, salsas y ripio, jamón y tocineta.", "precio": 18000},
+      {"id": "burger-gratinada", "categoria": "Hamburguesas", "nombre": "Hamburguesa gratinada", "descripcion": "Pan, carne Angus, lechuga, tomate, salsas y ripio, jamón, tocineta, queso gratinado y una porción de papas.", "precio": 25000},
+      {"id": "burger-triple", "categoria": "Hamburguesas", "nombre": "Hamburguesa triple", "descripcion": "Pan, carne Angus, chuleta, pollo, lechuga, tomate, salsas, ripio, jamón, tocineta, huevo, aguacate y maíz.", "precio": 35000},
+      {"id": "perro-sencillo", "categoria": "Perros calientes y colitas", "nombre": "Perro sencillo", "descripcion": "Pan, salchicha americana, ensalada de repollo, zanahoria y cilantro, salsas y ripio.", "precio": 13000},
+      {"id": "perro-especial", "categoria": "Perros calientes y colitas", "nombre": "Perro especial", "descripcion": "Pan, salchicha americana, ensalada de repollo, zanahoria y cilantro, salsas y ripio, tocineta y jamón.", "precio": 18000},
+      {"id": "perro-gratinado", "categoria": "Perros calientes y colitas", "nombre": "Perro gratinado", "descripcion": "Pan, salchicha americana, ensalada de repollo, zanahoria y cilantro, salsas y ripio, tocineta, jamón, queso gratinado y una porción de papas.", "precio": 20000},
+      {"id": "perro-super-especial", "categoria": "Perros calientes y colitas", "nombre": "Perro súper especial", "descripcion": "Pan, salchicha americana, ensalada de repollo, zanahoria y cilantro, salsas y ripio, tocineta, jamón, huevo, aguacate y maíz.", "precio": 23000},
+      {"id": "colita-cubana", "categoria": "Perros calientes y colitas", "nombre": "Colita cubana", "descripcion": "Salsa de la casa, jamón, queso, lechuga, tomate y gaseosa.", "precio": 11000},
+      {"id": "club-personal", "categoria": "Club house", "nombre": "Club house personal", "descripcion": "Pan Pullman, huevo, pollo, lechuga, tomate, salsas, jamón, queso y una porción de papas.", "precio": 15000},
+      {"id": "club-familiar", "categoria": "Club house", "nombre": "Club house familiar", "descripcion": "Pan Pullman, lechuga, tomate, pollo, huevo, jamón, queso, una porción de papas, una porción de salchichas y gaseosa.", "precio": 35000},
+      {"id": "ensalada-cesar", "categoria": "Ensaladas", "nombre": "Ensalada césar", "descripcion": "Lechuga, pollo, tocineta a la vinagreta y queso friz.", "precio": 13000},
+      {"id": "empanada", "categoria": "Antojos venezolanos", "nombre": "Empanada venezolana", "descripcion": "Elige un relleno.", "precio": 5000, "rellenos": 1},
+      {"id": "empanada-pabellon", "categoria": "Antojos venezolanos", "nombre": "Empanada de pabellón criollo", "descripcion": "Empanada venezolana de pabellón criollo.", "precio": 7000},
+      {"id": "arepa-dos", "categoria": "Antojos venezolanos", "nombre": "Arepa de dos rellenos", "descripcion": "Elige dos rellenos.", "precio": 12000, "rellenos": 2},
+      {"id": "arepa-tres", "categoria": "Antojos venezolanos", "nombre": "Arepa de tres rellenos", "descripcion": "Elige tres rellenos.", "precio": 13000, "rellenos": 3},
+      {"id": "picada-personal", "categoria": "Picadas", "nombre": "Picada personal", "descripcion": "Costilla ahumada, pollo, carne de res, lechuga, tomate, papas a la francesa, yucas, salsas y moneditas de plátano.", "precio": 26000},
+      {"id": "picada-familiar", "categoria": "Picadas", "nombre": "Picada familiar", "descripcion": "Costilla ahumada, pollo, carne de res, lechuga, tomate, papas a la francesa, yucas, salsas y moneditas de plátano.", "precio": 40000},
+      {"id": "salchipapa-sencilla", "categoria": "Salchipapas", "nombre": "Salchipapa sencilla", "descripcion": "Papas a la francesa y salchicha.", "precio": 10000},
+      {"id": "salchipapa-personal", "categoria": "Salchipapas", "nombre": "Salchipapa personal", "descripcion": "Porción personal.", "precio": 15000},
+      {"id": "salchipapa-gratinada", "categoria": "Salchipapas", "nombre": "Salchipapa gratinada", "descripcion": "Maíz, ripio, papas, salchicha y queso gratinado.", "precio": 25000},
+      {"id": "shawarma-pollo", "categoria": "Shawarmas y filete", "nombre": "Shawarma de pollo", "descripcion": "Pollo, lechuga, tomate, salsas y ripio.", "precio": 18000},
+      {"id": "shawarma-carne", "categoria": "Shawarmas y filete", "nombre": "Shawarma de carne", "descripcion": "Carne, lechuga, tomate, salsas y ripio.", "precio": 20000},
+      {"id": "shawarma-mixto", "categoria": "Shawarmas y filete", "nombre": "Shawarma mixto", "descripcion": "Pollo y carne, lechuga, tomate, salsas y ripio.", "precio": 22000},
+      {"id": "filete-pollo", "categoria": "Shawarmas y filete", "nombre": "Filete de pollo", "descripcion": "Acompañado de ensalada, una porción de papas y dos salsas.", "precio": 20000}
+    ];
+    const ICONOS = {"Hamburguesas": "🍔", "Perros calientes y colitas": "🌭", "Club house": "🥪", "Ensaladas": "🥗", "Antojos venezolanos": "🫓", "Picadas": "🍖", "Salchipapas": "🍟", "Shawarmas y filete": "🌯"};
+    const RELLENOS = [
+      "Pollo desmechado", "Carne desmechada", "Carne molida", "Queso y jamón",
+      "Maduro con queso", "Caraotas con queso", "Chorizo con queso"
+    ];
     const formato = valor => "$" + Number(valor).toLocaleString("es-CO");
     const carrito = new Map();
     let categoriaActual = "Hamburguesas";
+    let categoriaElegida = false;
     let elegido = null;
 
     /* ========================================================
        GUARDAR Y RECUPERAR EL CARRITO
        ======================================================== */
     try {
-      const guardado = JSON.parse(localStorage.getItem("urban-burger-esencial-carrito") || "[]");
+      const guardado = JSON.parse(localStorage.getItem("jireh-carrito") || "[]");
       if(Array.isArray(guardado)) guardado.forEach(x => {
         if(PRODUCTOS.some(p=>p.id===x.id) && Number.isInteger(x.cantidad) && x.cantidad>0 && x.cantidad<=100) {
           const key = `${x.id}||${x.nota || ""}`;
-          carrito.set(key,{id:x.id,nota:String(x.nota||"").slice(0,180),cantidad:x.cantidad});
+          carrito.set(key,{id:x.id,nota:String(x.nota||"").slice(0,300),cantidad:x.cantidad});
         }
       });
     } catch(err) { console.warn("No se pudo recuperar el carrito",err); }
     const guardar = () => {
-      try { localStorage.setItem("urban-burger-esencial-carrito",JSON.stringify([...carrito.values()])); } catch(err) {}
+      try { localStorage.setItem("jireh-carrito",JSON.stringify([...carrito.values()])); } catch(err) {}
     };
 
     /* ========================================================
@@ -1896,15 +1636,25 @@
        ======================================================== */
     const contenedorPestanas = document.getElementById("categorias");
     const contenedorProductos = document.getElementById("listaProductos");
-    [...new Set(PRODUCTOS.map(p=>p.categoria))].forEach(cat=>{
+    const categorias = new Set(["Hamburguesas", "Salchipapas", ...PRODUCTOS.map(p => p.categoria)]);
+    categorias.forEach(cat => {
       const boton=document.createElement("button");
       boton.type="button";boton.className="pestana-menu";
       boton.textContent=`${ICONOS[cat]||"🍽️"}  ${cat}`;
       boton.dataset.categoria=cat;
       boton.addEventListener("click",()=>{
-        categoriaActual=cat;elegido=null;renderizarMenu();
+        categoriaActual=cat;categoriaElegida=true;elegido=null;renderizarMenu();
       });
       contenedorPestanas.append(boton);
+    });
+
+    document.querySelectorAll("[data-categoria-menu]").forEach(enlace => {
+      enlace.addEventListener("click", () => {
+        categoriaActual = enlace.dataset.categoriaMenu;
+        categoriaElegida = true;
+        elegido = null;
+        renderizarMenu();
+      });
     });
 
     /* ========================================================
@@ -1914,6 +1664,7 @@
       contenedorPestanas.querySelectorAll("button").forEach(b=>{
         const activo=b.dataset.categoria===categoriaActual;
         b.classList.toggle("activa",activo);
+        b.dataset.elegida = String(activo && categoriaElegida);
         b.setAttribute("aria-pressed",String(activo));
       });
       contenedorProductos.replaceChildren();
@@ -1933,6 +1684,21 @@
         elegir.addEventListener("click",()=>{elegido=elegido===p.id?null:p.id;renderizarMenu();});
         acciones.append(precio,elegir);fila.append(texto,acciones);tarjeta.append(fila);
         const detalles=document.createElement("div");detalles.className="detalle-plato";
+        const camposRellenos = [];
+        for (let i = 0; i < (p.rellenos || 0); i++) {
+          const campoRelleno = document.createElement("label");
+          campoRelleno.textContent = p.rellenos === 1 ? "Relleno" : `Relleno ${i + 1}`;
+          const selector = document.createElement("select");
+          selector.required = true;
+          selector.add(new Option("Elige un relleno", ""));
+          RELLENOS.forEach(relleno => selector.add(new Option(relleno, relleno)));
+          selector.addEventListener("change", () => {
+            camposRellenos.forEach(campo => campo.setCustomValidity(""));
+          });
+          camposRellenos.push(selector);
+          campoRelleno.append(selector);
+          detalles.append(campoRelleno);
+        }
         const label=document.createElement("label");label.textContent="¿Alguna indicación para este plato?";
         const nota=document.createElement("textarea");nota.placeholder="Ejemplo: sin cebolla, salsa aparte";nota.maxLength=180;
         label.append(nota);
@@ -1940,7 +1706,15 @@
         const indicacion=document.createElement("span");indicacion.style.cssText="font-size:12px;color:#aaa";indicacion.textContent="Personaliza antes de agregar";
         const agregar=document.createElement("button");agregar.type="button";agregar.className="sumar-plato";agregar.textContent="🛒 Agregar al carrito";
         agregar.addEventListener("click",()=>{
-          const n=nota.value.trim();const key=`${p.id}||${n}`;
+          const rellenos = [];
+          for (const campo of camposRellenos) {
+            campo.setCustomValidity(rellenos.includes(campo.value) ? "Elige un relleno diferente." : "");
+            if (!campo.reportValidity()) return;
+            rellenos.push(campo.value);
+          }
+          const seleccion = rellenos.length ? `Relleno${rellenos.length > 1 ? "s" : ""}: ${rellenos.join(", ")}` : "";
+          const n = [seleccion, nota.value.trim()].filter(Boolean).join(" · ");
+          const key = `${p.id}||${n}`;
           const anterior=carrito.get(key);
           carrito.set(key,{id:p.id,nota:n,cantidad:(anterior?.cantidad||0)+1});
           guardar();actualizarCarrito();volarAlCarrito(agregar);
@@ -2036,55 +1810,6 @@
     if(enlaceContacto)enlaceContacto.href=`https://wa.me/${WHATSAPP}`;
     renderizarMenu();actualizarCarrito();
   })();
-  </script>
-
-  <!-- Evita tapar la portada con el botón flotante de WhatsApp. -->
-  <script>
-    if ('IntersectionObserver' in window) {
-      const observadorInicio = new IntersectionObserver(([entrada]) => {
-        document.body.classList.toggle('inicio-visible', entrada.isIntersecting);
-      });
-      observadorInicio.observe(document.getElementById('inicio'));
-    } else {
-      document.body.classList.remove('inicio-visible');
-    }
-  </script>
-
-  <!-- ========================================================
-       CARGA SEGURA DE PORTADA
-       La imagen está en imagenes/portada.jpg, según el repositorio actual.
-       La composición se activa solo cuando la imagen cargó bien.
-       Si falta la imagen, los textos y botones siguen visibles.
-       ======================================================== -->
-  <script id="cargaPortadaMovil">
-    (() => {
-      const pantallaMovil = window.matchMedia('(max-width: 720px)');
-      let cargaIniciada = false;
-
-      function cargarPortada() {
-        if (!pantallaMovil.matches || cargaIniciada) return;
-        cargaIniciada = true;
-        const portada = new Image();
-        portada.onload = () => {
-          if (portada.naturalWidth > 0 && portada.naturalHeight > 0) {
-            document.documentElement.classList.add('portada-cargada');
-          }
-        };
-        portada.onerror = () => {
-          cargaIniciada = false;
-          document.documentElement.classList.remove('portada-cargada');
-          console.warn('No se encontró imagenes/portada.jpg. Se mantiene el inicio con textos y botones visibles.');
-        };
-        portada.src = './imagenes/portada.jpg?v=3';
-      }
-
-      cargarPortada();
-      if (pantallaMovil.addEventListener) {
-        pantallaMovil.addEventListener('change', cargarPortada);
-      } else {
-        pantallaMovil.addListener(cargarPortada);
-      }
-    })();
   </script>
 
 </body>
